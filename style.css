@@ -124,15 +124,87 @@ button {
 }
 
 @media screen and (min-width: 641px) and (max-width: 1023px) {
-  body {
-    background-color: black;
+  .container,
+  .container-main,
+  .container-nav {
+    width: 90%;
+    display: block;
   }
+
+  h1 {
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(137, 136, 143);
+  }
+
+  .menu ul {
+    list-style: none;
+    margin-top: 1em;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0;
+  }
+
+  .container-nav h1,
+  .menu a {
+    font-weight: bolder;
+    color: #f1e8e8;
+    text-decoration: none;
+    font-size: 2.4em;
+  }
+
+  .menu a {
+    font-size: 25px;
+  }
+
+  .sobre h2,
+  #produtos h2 {
+    color: rgb(81, 67, 146);
+    margin-top: 2vh;
+    margin-bottom: 2hv;
+    border-bottom: 2px solid rgb(81, 67, 146);
+    width: 100%;
+    font-weight: bolder;
+    font-size: 2.2em;
+  }
+
+  .sobre p {
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  #produtos ul {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    gap: 4%;
+  }
+
+  #produtos li {
+    margin-bottom: 2vh;
+  }
+  
+  #produtos h3 {
+    margin: 1em 0 1em 0;
+    font-size: 1.7em;
+    text-align: center;
+  }
+
+  #produtos p {
+    margin: 1em 0 1em 0;
+    font-size: 1.3em;
+    text-align: center;
+  }
+
 }
-
 @media screen and (max-width: 640px) {
-  
-
-  
   .container,
   .container-main,
   .container-nav {
@@ -205,5 +277,4 @@ button {
     height: 27vh;
     margin-bottom: 1em;
   }
-
 }
